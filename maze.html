@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Project X - Maze</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/maze.css">
+<style>
+a {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+</head>
+<body>
+	 <h1 style=" 
+	 color: whitesmoke;
+  position: fixed;
+  top: 0;
+  padding-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  "> 
+  Find Your Way Back 🫴<br> </h1>
+	 <a href="index.html" style="position: fixed; bottom: 20px; right: 20px;">
+      Home
+    </a>
+<div id="container" style="zoom: 2;">
+	<div class="mbox">
+	<div id="maze">
+		<div id="thingie" style="width: 25px;height: 25px ; z-index: 999;">
+			<div class="emo" id="emo"><img src='stickers/1.webp' style="width: 25px;height: 25px ; z-index: 999;"></div>
+		</div>
+		<div id="home">
+			<div class="emo">🫴</div>
+		</div>
+		<div class="barrier" id="top"></div>
+		<div class="barrier" id="bottom"></div>
+	</div>
+		</div>
+	<div class="controls" style="display: none;">
+		<div class="buttons">
+			<button class="btn" id="bu"><div class="chevron">↑</div></button>
+			<button class="btn" id="bd"><div class="chevron">↓</div></button>
+			<button class="btn" id="bl"><div class="chevron">←</div></button>
+			<button class="btn" id="br"><div class="chevron">→</div></button>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script  src="assets/js/maze.js"></script>
+
+</body>
+</html>

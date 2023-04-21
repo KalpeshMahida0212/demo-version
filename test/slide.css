@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   background-image: url("../img/back.jpeg");
+ backdrop-filter: blur(12px);
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+h1 {
+  color: whitesmoke;
+  z-index: -10;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(1.7em, 1.7vw, 3.7em);
+  font-weight: 100;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
+#controls {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container {
+  width: 500px;
+  height: 500px;
+  background-color: #333333;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+#message {
+  width: 800px;
+  height: 30px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#hint {
+  width: 500px;
+  height: 500px;
+  background-image: url('https://image.ibb.co/b6LcGv/wonder_woman.png');
+  position:absolute;
+  z-index: 3;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#start-btn {
+  background-color: #00D9C0;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: #009E8C;
+  color: white;
+}
+
+#hint-btn {
+  background-color: #FF4365;
+}
+
+#hint-btn:hover {
+  background-color: #D13753;
+  color: white;
+}
+
+.piece {
+  background-image: url('https://image.ibb.co/b6LcGv/wonder_woman.png');
+  position: absolute;
+}
+
+.empty-piece {
+  background-color: #333333;
+  position: absolute;
+}
